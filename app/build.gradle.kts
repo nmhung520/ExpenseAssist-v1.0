@@ -6,7 +6,7 @@ android {
     namespace = "com.example.expenseassist"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.example.expenseassist"
+        applicationId = "com.example.expenseassistv1"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
