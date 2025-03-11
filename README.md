@@ -1,12 +1,28 @@
-# ExpenseAssist v0.0
-This is the original version of ExpenseAssist, built with Jetpack Compose. It serves as a minimal, stable template for forking or reusing in other projects.
+# ExpenseAssist-v1.0
 
-## Configuration
-- Android Gradle Plugin (AGP): 8.8.1
-- Kotlin: 1.9.24
-- Compose Compiler: 1.5.14
-- Minimum SDK: 26
+## Mục tiêu
+Ứng dụng quản lý danh sách cửa hàng, cho phép người dùng:
+- Xem danh sách cửa hàng.
+- Thêm cửa hàng mới (tên, địa chỉ, số điện thoại).
+- Mở rộng: Xem chi tiết cửa hàng, so sánh giá, xuất JSON.
 
-## How to Use
-1. Clone the repo: `git clone https://github.com/nmhung520/ExpenseAssist.git`
-2. Open in Android Studio, sync Gradle, and run on a device (API 26+).
+## Công nghệ
+- **Giao diện**: Jetpack Compose (Kotlin), không dùng XML.
+- **Lưu trữ**: Room Database.
+- **Quản lý dữ liệu**: ViewModel.
+- **Dependencies chính**:
+  - Compose BOM: `2023.10.01`.
+  - Room: `2.6.1`.
+  - Navigation Compose: `2.7.7`.
+  - Lifecycle ViewModel Compose: `2.8.0`.
+
+## Tiến trình hiện tại
+- Đã hiển thị danh sách cửa hàng bằng `LazyColumn`.
+- Đã thêm chức năng thêm cửa hàng mới qua `AlertDialog` với `TextField`.
+- Đã sửa lỗi `KeyboardOptions` bằng cách dùng `import androidx.compose.foundation.text.KeyboardOptions`.
+- Đã cập nhật file `build.gradle.kts` để dùng Compose BOM.
+
+## Các bước tiếp theo
+- Thêm màn hình chi tiết khi nhấn vào một cửa hàng.
+- Thêm chức năng so sánh giá giữa các cửa hàng.
+- Xuất danh sách cửa hàng thành JSON.
